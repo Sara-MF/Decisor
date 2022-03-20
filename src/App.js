@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { MyContext } from './context';
+import { SwitchTransition, CSSTransition } from 'react-transition-group';
 
 import 'animate.css';
 import './assets/App.css';
@@ -8,25 +9,31 @@ import Confirm from './components/confirm';
 import Results from './components/results';
 
 
-const App = () => {
+	const App = () => {
 
-  const HandleComponent = () => {
+		const HandleComponent = () => {
 
-    const context = useContext(MyContext);
+			const context = useContext(MyContext);
 
-    const screen = context.state.screen;
+			const screen = context.state.screen;
 
-    if (screen === 0) return <Initial/>
-    if (screen === 1) return <Confirm/>
-    if (screen === 2) return <Results/>
+			if (screen === 0) return <Initial />
+			if (screen === 1) return <Confirm />
+			if (screen === 2) return <Results />
 
-  }
+		}
 
-  return (
-    <div className="container">
-      {HandleComponent()}
-    </div>
-  );
-}
+		return (
+			<div className="container">
+
+				<SwitchTransition>
+					<CSSTransition>
+						{HandleComponent()}
+					</CSSTransition>
+				</SwitchTransition>
+
+			</div>
+		);
+	}
 
 export default App;
