@@ -1,5 +1,6 @@
 import { useRef, useState, useContext } from 'react';
 import { MyContext } from '../context';
+import { toast } from 'react-toastify';
 
 const Initial = () => {
 
@@ -8,7 +9,7 @@ const Initial = () => {
     const textInput = useRef();
     
     const [showButton, setShowButton] = useState(false);
-    const [showError, setShowError] = useState(false);
+    // const [showError, setShowError] = useState(false);
 
     const handleChange = () => {
 
@@ -22,7 +23,10 @@ const Initial = () => {
         const value = textInput.current.value;
 
         if (value.length > 30) {
-            setShowError(true);
+            // setShowError(true);
+            toast.error("A pergunta é muito grande", {
+                position:toast.POSITION.TOP_LEFT
+            });
             return false;
         }
 
@@ -51,13 +55,13 @@ const Initial = () => {
                 </button>
             }
 
-            { showError &&
+            {/* { showError &&
 
                 <div className="error">
                     ERRO: A pergunta é muito grande
                 </div>
 
-            }
+            } */}
             
         </div>
 
