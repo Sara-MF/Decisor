@@ -7,28 +7,11 @@ body {
 }
 
 :root {
-/* --charcoal: #264653;
---pgreen: #2a9d8f;
---yellow: #e9c46a;
---orange: #f4a261;
---sienna: #e76f51;
-
-
---violet: violet;
---YELLOW: rgba(255, 255, 0, 0.829);
---purple: purple;
---red: rgba(255, 60, 0, 0.829);
---debaixo: #3a506b;
---linha: #5bc0be;
---erro: #6fffe9;
---mudancabutao: #1c2541; */
-
 --title: #fd3e81;
 --line: #00d0ff;
 --button: #01739c;
 --changeButton: #ff6392;
 --error: #d72483;
-
 }
 
 a {
@@ -58,8 +41,6 @@ h1, h3 {
 .btn {
   background: var(--button);
   color: #ffffff;
-  /* background: #332D41;
-  color: #332D41; */
   width: 100%;
   margin-top: 10px;
 }
@@ -79,24 +60,6 @@ h1, h3 {
   font-weight: 800;
   margin-top: 20px;
 }
-
-/* .zoom-enter {
-  transform: scale(0%);
-  transition: 0.4s linear;
-}
-
-.zoom-enter-active {
-  transform: scale(100%);
-}
-
-.zoom-exit {
-  transform: scale(0%);
-  transition: 0.4s linear;
-}
-
-.zoom-exit-active {
-  transform: sale(100%);
-} */
 
 .fade-enter {
 	opacity: 0;
