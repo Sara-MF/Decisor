@@ -44,8 +44,13 @@ import Results from './components/results';
 
 				</div>
 
-				<ToastContainer />
-
+				<ToastContainer 
+					toastStyle={{ 
+						backgroundColor: "#e597af",
+						color: "#011638"
+					}}
+				/>
+				
 			</div>
 
 		);

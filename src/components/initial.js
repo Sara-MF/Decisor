@@ -24,7 +24,7 @@ const Initial = () => {
 
         if (value.length > 30) {
             // setShowError(true);
-            toast.error("A pergunta é muito grande", {
+            toast.error("A pergunta é muito grande!", {
                 position:toast.POSITION.TOP_LEFT
             });
             return false;
