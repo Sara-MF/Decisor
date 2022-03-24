@@ -10,7 +10,7 @@ const Confirm = () => {
     }
 
     const goBack = () => {
-        context.question(''); // reseta a pergunta
+        context.question('');
         context.goTo(0);
     }
 
