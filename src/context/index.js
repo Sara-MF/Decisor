@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 
 const list = [
-    'Sim', 'Não', 'Talvez', 'Nem pense nisso', 'Não tenho certeza. Pergunte de novo', 'Fale com um amigo', 'Pare'
+    'Sim', 'Não', 'Talvez', 'Nem pense nisso', 'Não tenho certeza. Pergunte de novo',
+    'Fale com um amigo', 'Pare imediatamente', 'Você deveria desistir', 'Não vale a pena',
+    'Sim, definitivamente sim', 'Muito provavelmente sim', 'Acho que pode ser', 'É uma boa ideia',
+    'Pergunte de novo mais tarde', 'Você não quer ouvir a resposta', 'Você deveria se esforçar mais',
+    'As duas coisas', 'Acho arriscado', 'Você deveria fazer outra coisa'
 ]
 
 const MyContext = React.createContext();
