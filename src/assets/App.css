@@ -8,7 +8,7 @@ body {
 
 :root {
 --title: #fd3e81;
---line: #00d0ff;
+--line_title: #00d0ff;
 --button: #01739c;
 --changeButton: #ff6392;
 --error: #d72483;
@@ -33,7 +33,7 @@ h1, h3 {
   font-family: 'Righteous', cursive;
   color: var(--title);
   text-decoration: underline;
-  text-decoration-color:var(--line);
+  text-decoration-color:var(--line_title);
   font-size: 50px;
   text-align: center;
 }

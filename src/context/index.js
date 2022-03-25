@@ -34,6 +34,7 @@ class MyProvider extends Component {
 
         let rand = this.getRandomValue();
 
+        // pra não repetir a resposta 2 vezes seguidas
         if (this.state.result !== '') {
             while (rand === this.state.result) {
                 rand = this.getRandomValue();
